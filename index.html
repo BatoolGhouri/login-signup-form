@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Sigup Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <input type="radio" name="toggle" id="login" checked hidden>
+<input type="radio" name="toggle" id="register" hidden>
+    <div class="wrapper">
+        <span class="bg-animate"></span>
+        <span class="bg-animate2"></span>
+
+        <!-- Login Form -->
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" required />
+              <label>Username</label>
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+              <input type="password" required />
+              <label>Password</label>
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="logreg-link">
+              <p>
+                Don't have an account?
+                <label for="register" class="register-link">Sign Up</label>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="info-text login">
+          <h2>Welcome Back!</h2>
+          <p>To keep connected with us please login with your personal info</p>
+        </div>
+        
+        <!-- Signup Form -->
+        <div class="form-box register">
+          <h2>Sign Up</h2>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" required />
+              <label>Username</label>
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+              <input type="text" required />
+              <label>Email</label>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+              <input type="password" required />
+              <label>Password</label>
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <div class="logreg-link">
+              <p>
+                Already have an account?
+                <label for="login" class="login-link">Login</label>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="info-text register">
+          <h2>Let's Get Started</h2>
+          <p>Enter your personal details and start journey with us</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
